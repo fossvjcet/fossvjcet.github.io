@@ -9,8 +9,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com">
+        // Align event cards automatically on page load and window resize
+        function alignEventCards() {
+          const eventContainer = document.querySelector('.event-container');
+          const eventCards = eventContainer.querySelectorAll('.event-card');
+    
+          // Reset the order of event cards
+          eventCards.forEach((card) => {
+            card.style.order = 'initial';
+          });
+    
+          let order = 1;
+          let previousCardBottom = 0;
+    
+          // Calculate the order and alignment of event cards
+          eventCards.forEach((card) => {
+            const cardRect = card.getBoundingClientRect();
+            const cardTop = cardRect.top;
+            const cardBottom = cardRect.bottom;
+    
+            if (cardTop > previousCardBottom) {
+              order++;
+            }
+    
+            card.style.order = order;
+            previousCardBottom = cardBottom;
+          });
+        }
+    
+        // Align event cards on page load
+        window.addEventListener('load', alignEventCards);
+    
+        // Align event cards on window resize
+        window.addEventListener('resize', alignEventCards);
+      </script>
 </head>
+<style>
+    .event-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr)); /* Adjust the width of the cards */
+      grid-gap: 90px; /* Increased spacing between cards to 40px */
+      justify-items: center;
+      align-items: center; /* Aligns items in the center vertically */
+    }
+  
+    .event-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+  
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 255, 0.2);
+    }
+  
+    .event-card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  
+    .event-card .event-name {
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+  
+  
+  
 <body>
     <section style="font-family: 'Rubik', sans-serif;" class="relative w-full px-8 text-gray-700 bg-white body-font" data-tails-scripts="//unpkg.com/alpinejs">
     <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
@@ -53,29 +130,41 @@
     
 </section>
 
-<section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
-    <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
-        <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
-            <div class="box-border flex-1 text-center border-solid sm:text-left">
-                <h2 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
-                    Introduction to Opensource by Abraham Raji, May The FOSS Be With You</h2>
-                <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
-                    The workshop will be led by Abraham Raji, an experienced instructor in the field of open-source🎓. </p>
-    </div>
-    </div>
-    <br>
-    <div class="relative h-0 overflow-hidden max-w-full w-full" style="padding-bottom: 56.25%">
-		<iframe
-        src="https://www.youtube.com/embed/97rZh8HUZ14"
-            frameborder="0"
-            allowfullscreen
-            class="absolute top-0 left-0 w-full h-full"
-        ></iframe>
-	</div>
-</section>
+<div class="event-container">
+
+    <div class="event-card">
+        <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
+      <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
+        <div class="relative h-0 overflow-hidden max-w-full w-full" style="padding-bottom: 56.25%">
+            <iframe
+            src="https://www.youtube.com/embed/97rZh8HUZ14"
+                frameborder="0"
+                allowfullscreen
+                class="absolute top-0 left-0 w-full h-full"
+            ></iframe>
+        </div>
+        <br>
+
+          <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
+              <div class="box-border flex-1 text-center border-solid sm:text-left">
+                  <h2 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
+                      Introduction to Opensource by Abraham Raji, May The FOSS Be With You</h2>
+                  <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
+                      The workshop will be led by Abraham Raji, an experienced instructor in the field of open-source🎓. </p>
+      </div>
+      </div>
+      <br>
+     
+  </section>
+  
+            </div>
+      </div>
 
 
 
+
+
+      <div class="event-card">
 
  <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
@@ -97,7 +186,8 @@
         ></iframe>
 	</div>
 </section>
-
+      </div>
+      <div class="event-card">
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
         <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
@@ -119,8 +209,8 @@ The workshop will be led by Balu M.N, an Engineering Lead🎓.Git and GitHub are
         ></iframe>
 	</div>
 </section>
-
-
+      </div>
+      <div class="event-card">
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
         <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
@@ -142,7 +232,8 @@ In this , Krishnadev P Melevila will give an introduction to CTFs (Capture the F
         ></iframe>
 	</div>
 </section>
-
+      </div>
+      <div class="event-card">
 
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
@@ -164,7 +255,8 @@ In this , Krishnadev P Melevila will give an introduction to CTFs (Capture the F
         ></iframe>
 	</div>
 </section>
-
+      </div>
+      <div class="event-card">
 
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
@@ -186,7 +278,9 @@ In this , Krishnadev P Melevila will give an introduction to CTFs (Capture the F
         ></iframe>
 	</div>
 </section>
+      </div>
 
+      <div class="event-card">
 
 
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
@@ -209,7 +303,8 @@ In this , Krishnadev P Melevila will give an introduction to CTFs (Capture the F
         ></iframe>
 	</div>
 </section>
-
+      </div>
+      <div class="event-card">
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
         <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
@@ -230,7 +325,8 @@ In this , Krishnadev P Melevila will give an introduction to CTFs (Capture the F
         ></iframe>
 	</div>
 </section>
-
+      </div>
+      <div class="event-card">
 
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
@@ -253,8 +349,8 @@ Explore the essential tools and technologies used in DevOps.Led by Vyshakh B T, 
         ></iframe>
 	</div>
 </section>
-
-
+      </div>
+      <div class="event-card">
 
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
@@ -275,9 +371,10 @@ Explore the essential tools and technologies used in DevOps.Led by Vyshakh B T, 
             class="absolute top-0 left-0 w-full h-full"
         ></iframe>
 	</div>
-</section> -->
+</section>
 
-
+      </div>
+      <div class="event-card">
 
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
@@ -299,6 +396,9 @@ Explore the essential tools and technologies used in DevOps.Led by Vyshakh B T, 
         ></iframe>
 	</div>
 </section>
+
+      </div>
+      <div class="event-card">
 <section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
         <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
@@ -318,7 +418,10 @@ Explore the essential tools and technologies used in DevOps.Led by Vyshakh B T, 
             class="absolute top-0 left-0 w-full h-full"
         ></iframe>
 	</div>
-</section><section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
+</section>
+      </div>
+<div class="event-card">
+<section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
         <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
             <div class="box-border flex-1 text-center border-solid sm:text-left">
@@ -337,7 +440,15 @@ Explore the essential tools and technologies used in DevOps.Led by Vyshakh B T, 
             class="absolute top-0 left-0 w-full h-full"
         ></iframe>
 	</div>
-</section><section style="font-family: 'Rubik', sans-serif;" class="bg-white">
+</section>
+
+</div>
+
+
+</div>
+
+
+<section style="font-family: 'Rubik', sans-serif;" class="bg-white">
     <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
