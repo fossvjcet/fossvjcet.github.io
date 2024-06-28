@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Front-End Development using React Course</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;💻&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section style="font-family: 'Rubik', sans-serif;" class="relative w-full px-8 text-gray-700 bg-white body-font" data-tails-scripts="//unpkg.com/alpinejs">
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <nav class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute tails-relative">
+                <a href="index.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                    <span class="block">Home</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                    </span>
+                </a>
+                <a href="events.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                    <span class="block">Events</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                    </span>
+                </a>
+                <a href="notes.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                    <span class="block">Projects</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                    </span>
+                </a>
+                <a href="https://forms.gle/SrdYz8tTArwvS8PKA" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                    <span class="block">Join Us</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                    </span>
+                </a>
+                <a href="react-course.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                    <span class="block">React Course</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-gray-50">
+        <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+            <div class="flex flex-wrap items-center -mx-3">
+                <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+                    <div class="w-full lg:max-w-md">
+                        <h1 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
+                            Front-End Development using React Course
+                        </h1>
+                        <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
+                            Join us for a comprehensive journey into front-end development with React, organized by FOSS VJCET and BigBinary Academy.
+                        </p>
+                        <p class="mt-2 text-lg text-left text-red-500 border-0 border-gray-200 sm:text-xl" style="font-family: 'Rubik', sans-serif;">
+                            This course is completely free!
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Course Highlights:</strong>
+                            <ul class="list-disc ml-5">
+                                <li>HTML/CSS: 20 hours of styling like a pro.</li>
+                                <li>JavaScript: 104 hours of making things actually work.</li>
+                                <li>React: 60 hours of building cool stuff.</li>
+                                <li>React Project: 20 hours of showing off your skills.</li>
+                            </ul>
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Kickoff:</strong> Orientation on <strong>1st July 2024</strong> on Zoom.
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            This is serious business, folks. No joking around. It's time to level up your skills!
+                        </p>
+                        <a href="https://vjcet.neetoform.com/bba-front-end-development" class="mt-6 inline-flex items-center justify-center w-full px-5 py-4 font-sans text-base leading-none text-white no-underline bg-indigo-600 border border-indigo-600 border-solid rounded cursor-pointer md:w-auto hover:bg-indigo-700 hover:border-indigo-700 focus:bg-indigo-700 focus:border-indigo-700">
+                            Register Now
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <p class="mt-4 text-left text-gray-700">
+                            Download the full course details and poster below:
+                        </p>
+                        <a href="Front End Development using React.pdf" class="mt-2 inline-flex items-center justify-center w-full px-5 py-3 font-sans text-base leading-none text-indigo-600 no-underline bg-white border border-indigo-600 border-solid rounded cursor-pointer md:w-auto hover:bg-gray-50 focus:bg-gray-50">
+                            Download PDF
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <img src="fosscore24.png" alt="Course Poster" class="mt-6 max-w-full h-auto">
+                        
+                        <h2 class="mt-8 text-3xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-4xl" style="font-family: 'Rubik', sans-serif;">
+                            Learn Front-End Development using React
+                        </h2>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Course Details:</strong>
+                            <ul class="list-disc ml-5">
+                                <li><strong>Course Name:</strong> Front-End Development using React</li>
+                                <li><strong>Prerequisites:</strong> None</li>
+                                <li><strong>Duration of the Course:</strong> 204 hours
+                                    <ul class="list-disc ml-5">
+                                        <li>HTML/CSS: 20 hours</li>
+                                        <li>JavaScript: 104 hours</li>
+                                        <li>React: 60 hours</li>
+                                        <li>React Project: 20 hours</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Course Outcome:</strong>
+                            <ul class="list-disc ml-5">
+                                <li>Understand HTML and CSS to create user interfaces</li>
+                                <li>Learn JavaScript for web development</li>
+                                <li>Build web applications with React</li>
+                            </ul>
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Methodology of Course Delivery:</strong>
+                            <ul class="list-disc ml-5">
+                                <li>Offline self-study with the BigBinary Academy curriculum</li>
+                                <li>Online Daily Standup Calls for Knowledge Assessment</li>
+                                <li>Projects built after each milestone</li>
+                                <li>Proctored coding assessment for JavaScript</li>
+                            </ul>
+                        </p>
+                        <h3 class="mt-8 text-2xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-3xl" style="font-family: 'Rubik', sans-serif;">
+                            Course Content
+                        </h3>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Learn HTML</strong>
+                            <ul class="list-disc ml-5">
+                                <li><strong>Course Material:</strong> BigBinary Academy Learn HTML Course</li>
+                                <li><strong>Course Outcome:</strong>
+                                    <ul class="list-disc ml-5">
+                                        <li>Understanding the basics of HTML structure and syntax</li>
+                                        <li>Implementing all major types of HTML elements</li>
+                                        <li>Incorporating semantic HTML for enhanced accessibility and SEO</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Learn CSS</strong>
+                            <ul class="list-disc ml-5">
+                                <li><strong>Course Material:</strong> BigBinary Academy Learn CSS Course</li>
+                                <li><strong>Course Outcome:</strong>
+                                    <ul class="list-disc ml-5">
+                                        <li>Exploring CSS fundamentals such as selectors, properties, and values</li>
+                                        <li>Styling webpages using CSS for visual enhancements and layout design</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Learn JavaScript</strong>
+                            <ul class="list-disc ml-5">
+                                <li><strong>Course Material:</strong> BigBinary Academy Learn JavaScript Course</li>
+                                <li><strong>Course Outcome:</strong>
+                                    <ul class="list-disc ml-5">
+                                        <li>Mastering essential JavaScript concepts including variables, functions, and data types</li>
+                                        <li>Understanding key JavaScript concepts such as asynchronous programming, and promises</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>Learn React</strong>
+                            <ul class="list-disc ml-5">
+                                <li><strong>Course Material:</strong> BigBinary Academy Learn React Course</li>
+                                <li><strong>Course Outcome:</strong>
+                                    <ul class="list-disc ml-5">
+                                        <li>Getting started with React fundamentals, including components, JSX, and props</li>
+                                        <li>Building interactive user interfaces with React state management and event handling</li>
+                                        <li>Exploring advanced React topics such as hooks, context API, and component lifecycle methods</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p class="mt-4 text-left text-gray-700">
+                            <strong>React Project Work</strong>
+                            <ul class="list-disc ml-5">
+                                <li>Building a comprehensive project using React. Utilize all the knowledge accumulated from the workshop courses</li>
+                                <li>Ensuring that the project is fully functional and responsive with an appealing frontend that maintains accessibility for all users</li>
+                                <li>Refactoring & optimizing the codebase based on best practices & design patterns shared throughout the workshop</li>
+                            </ul>
+                        </p>
+                        <h3 class="mt-8 text-2xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-3xl" style="font-family: 'Rubik', sans-serif;">
+                            Course Highlights
+                        </h3>
+                        <p class="mt-4 text-left text-gray-700">
+                            <ul class="list-disc ml-5">
+                                <li>Establish a solid foundation in React, mastering essential concepts for building dynamic user interfaces</li>
+                                <li>Enhance JavaScript proficiency through practical application within React projects, reinforcing key language principles</li>
+                                <li>Undertake hands-on projects that combine React with HTML, CSS, and JavaScript, providing real-world experience in web development</li>
+                                <li>Gain valuable insights from industry professionals, offering practical advice and perspectives to elevate your React development skills</li>
+                                <li>Build a final project in React using skills picked up in the workshop and vetted by the mentors. Improve the project with mentor-guided code reviews</li>
+                            </ul>
+                        </p>
+                        
+                        <p class="mt-4 text-left text-gray-700">
+                            Learn more about our partners:
+                            <ul class="list-disc ml-5">
+                                <li><a href="https://www.bigbinary.com/" class="text-blue-600 underline hover:text-blue-800">BigBinary</a></li>
+                                <li><a href="https://bigbinaryacademy.com/" class="text-blue-600 underline hover:text-blue-800">BigBinary Academy</a></li>
+                            </ul>
+                        </p>
+                        
+                        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat Meme" class="mt-6 max-w-full h-auto">
+                    </div>
+                </div>
+                <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
+                    <img class="mx-auto sm:max-w-sm lg:max-w-full lg:w-80" src="https://cdn.devdojo.com/tails/images/GD3peblTD5hWpSPL8NxOYxIWb6P7jAD0pXtENmt8.png" alt="feature image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>
