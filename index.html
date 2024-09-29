@@ -5,167 +5,336 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Free and Opensource Club, VJCET</title>
     
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;💻&lt;/text&gt;&lt;/svg&gt;">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- Navigation Section -->
     <section style="font-family: 'Rubik', sans-serif;" class="relative w-full px-8 text-gray-700 bg-white body-font" data-tails-scripts="//unpkg.com/alpinejs">
-    <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
-        
-
-        <nav class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute tails-relative">
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Home</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="events.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Events</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="#projects" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Projects</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="https://forms.gle/SrdYz8tTArwvS8PKA" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Join Us</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="reactworkshop.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">React Course</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-        <div class="tails-hover-element"></div></nav>
-        </section><section class="py-20 bg-gray-50">
-  <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
-    <div class="flex flex-wrap items-center -mx-3">
-      <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
-        <div class="w-full lg:max-w-md">
-        <p class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">Free and Opensource Club</p>
-          <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;"> of Viswajyothi College of Engineering and Technology. Ours is an official student chapter of the International Centre for Free and Opensource Software, Trivandrum.</p>
-          <ul>
-          </ul>
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <nav class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute tails-relative">
+                <!-- Navigation Links -->
+                <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" 
+                   x-data="{ hover: false }" 
+                   @mouseenter="hover = true" 
+                   @mouseleave="hover = false">
+                    <span class="block">Home</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" 
+                              class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" 
+                              x-transition:enter="transition ease duration-200" 
+                              x-transition:enter-start="scale-0" 
+                              x-transition:enter-end="scale-100" 
+                              x-transition:leave="transition ease-out duration-300" 
+                              x-transition:leave-start="scale-100" 
+                              x-transition:leave-end="scale-0" 
+                              style="display: none;">
+                        </span>
+                    </span>
+                </a>
+                <a href="events.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" 
+                   x-data="{ hover: false }" 
+                   @mouseenter="hover = true" 
+                   @mouseleave="hover = false">
+                    <span class="block">Events</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" 
+                              class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" 
+                              x-transition:enter="transition ease duration-200" 
+                              x-transition:enter-start="scale-0" 
+                              x-transition:enter-end="scale-100" 
+                              x-transition:leave="transition ease-out duration-300" 
+                              x-transition:leave-start="scale-100" 
+                              x-transition:leave-end="scale-0" 
+                              style="display: none;">
+                        </span>
+                    </span>
+                </a>
+                <a href="#projects" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" 
+                   x-data="{ hover: false }" 
+                   @mouseenter="hover = true" 
+                   @mouseleave="hover = false">
+                    <span class="block">Projects</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" 
+                              class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" 
+                              x-transition:enter="transition ease duration-200" 
+                              x-transition:enter-start="scale-0" 
+                              x-transition:enter-end="scale-100" 
+                              x-transition:leave="transition ease-out duration-300" 
+                              x-transition:leave-start="scale-100" 
+                              x-transition:leave-end="scale-0" 
+                              style="display: none;">
+                        </span>
+                    </span>
+                </a>
+                <a href="https://forms.gle/SrdYz8tTArwvS8PKA" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" 
+                   x-data="{ hover: false }" 
+                   @mouseenter="hover = true" 
+                   @mouseleave="hover = false">
+                    <span class="block">Join Us</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" 
+                              class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" 
+                              x-transition:enter="transition ease duration-200" 
+                              x-transition:enter-start="scale-0" 
+                              x-transition:enter-end="scale-100" 
+                              x-transition:leave="transition ease-out duration-300" 
+                              x-transition:leave-start="scale-100" 
+                              x-transition:leave-end="scale-0" 
+                              style="display: none;">
+                        </span>
+                    </span>
+                </a>
+                <a href="reactworkshop.html" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" 
+                   x-data="{ hover: false }" 
+                   @mouseenter="hover = true" 
+                   @mouseleave="hover = false">
+                    <span class="block">React Course</span>
+                    <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                        <span x-show="hover" 
+                              class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" 
+                              x-transition:enter="transition ease duration-200" 
+                              x-transition:enter-start="scale-0" 
+                              x-transition:enter-end="scale-100" 
+                              x-transition:leave="transition ease-out duration-300" 
+                              x-transition:leave-start="scale-100" 
+                              x-transition:leave-end="scale-0" 
+                              style="display: none;">
+                        </span>
+                    </span>
+                </a>
+                <div class="tails-hover-element"></div>
+            </nav>
         </div>
-      </div>
-      <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><img class="mx-auto sm:max-w-sm lg:max-w-full lg:w-80" src="https://cdn.devdojo.com/tails/images/GD3peblTD5hWpSPL8NxOYxIWb6P7jAD0pXtENmt8.png" alt="feature image"></div>
-    </div>
-  </div>
+    </section>
 
-
-</section>
-
-<section id="projects" class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
-    <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
-        <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
-            <div class="box-border flex-1 text-center border-solid sm:text-left">
-                <h2 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
-                    Collaborative Study Notes</h2>
-                <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
-                    Access the KTU (2019 scheme) study notes shared by our faculty and students.</p>
+    <!-- Main Content Sections -->
+    <section class="py-20 bg-gray-50">
+        <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+            <div class="flex flex-wrap items-center -mx-3">
+                <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+                    <div class="w-full lg:max-w-md">
+                        <p class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
+                            Free and Opensource Club
+                        </p>
+                        <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
+                            of Viswajyothi College of Engineering and Technology. Ours is an official student chapter of the International Centre for Free and Opensource Software, Trivandrum.
+                        </p>
+                        <ul>
+                            <!-- You can add list items here if needed -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
+                    <img class="mx-auto sm:max-w-sm lg:max-w-full lg:w-80" src="https://cdn.devdojo.com/tails/images/GD3peblTD5hWpSPL8NxOYxIWb6P7jAD0pXtENmt8.png" alt="feature image">
+                </div>
             </div>
-            <a style="font-family: 'Rubik', sans-serif;" href="notes.html" class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans text-base leading-none text-white no-underline bg-indigo-600 border border-indigo-600 border-solid rounded cursor-pointer md:w-auto lg:mt-0 hover:bg-indigo-700 hover:border-indigo-700 hover:text-white focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-lg lg:ml-6 md:text-xl" data-primary="indigo-600" data-rounded="rounded">Collaborative Study Notes<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12" class=""></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </a>
         </div>
-        <br><br>
-        <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
-            <div class="box-border flex-1 text-center border-solid sm:text-left">
-                <h2 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
-                    Placement Study Guide</h2>
-                <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
-                    Prepare for campus placements using our highly suggested study materials.</p>
-            </div>
-            <a style="font-family: 'Rubik', sans-serif;" href="https://fossvjcet.github.io/placement-prep/" class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans text-base leading-none text-white no-underline bg-indigo-600 border border-indigo-600 border-solid rounded cursor-pointer md:w-auto lg:mt-0 hover:bg-indigo-700 hover:border-indigo-700 hover:text-white focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-lg lg:ml-6 md:text-xl" data-primary="indigo-600" data-rounded="rounded">Placement Study Guide &nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12" class=""></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<div style="display: flex; justify-content: center; align-items: center; ">
-    <div style="width: 400px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); text-align: center;">
-      <h2 style="font-size: 24px; font-weight: bold; margin: 0;">Sponsor Us</h2>
-      <p style="font-size: 18px; color: #888; margin: 10px 0;">We are seeking sponsorship to support the open source club and to conduct more fun events.</p>
-      <a href="https://www.buymeacoffee.com/fossvjcet" style="display: flex; justify-content: center; align-items: center; margin-top: 20px; text-decoration: none;">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=fossvjcet&button_colour=5F7FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me a Coffee" style="width: 200px;">
-      </a>
-    </div>
-  </div>
-  
-  
-  
-
-
-<section style="font-family: 'Rubik', sans-serif;" class="bg-white">
-    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
-            <div class="px-5 py-2">
-                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                    Home
+    <section id="projects" class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
+        <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
+            <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
+                <div class="box-border flex-1 text-center border-solid sm:text-left">
+                    <h2 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
+                        Collaborative Study Notes
+                    </h2>
+                    <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
+                        Access the KTU (2019 scheme) study notes shared by our faculty and students.
+                    </p>
+                </div>
+                <a href="notes.html" 
+                   style="font-family: 'Rubik', sans-serif;" 
+                   class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans text-base leading-none text-white no-underline bg-indigo-600 border border-indigo-600 border-solid rounded cursor-pointer md:w-auto lg:mt-0 hover:bg-indigo-700 hover:border-indigo-700 hover:text-white focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-lg lg:ml-6 md:text-xl" 
+                   data-primary="indigo-600" 
+                   data-rounded="rounded">
+                    Collaborative Study Notes
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </a>
             </div>
-            <div class="px-5 py-2">
-                <a href="events.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">Events</a>
+            <br><br>
+            <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
+                <div class="box-border flex-1 text-center border-solid sm:text-left">
+                    <h2 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl" style="font-family: 'Rubik', sans-serif;">
+                        Placement Study Guide
+                    </h2>
+                    <p class="mt-2 text-xl text-left text-gray-900 border-0 border-gray-200 sm:text-2xl" style="font-family: 'Rubik', sans-serif;">
+                        Prepare for campus placements using our highly suggested study materials.
+                    </p>
+                </div>
+                <a href="https://fossvjcet.github.io/placement-prep/" 
+                   style="font-family: 'Rubik', sans-serif;" 
+                   class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans text-base leading-none text-white no-underline bg-indigo-600 border border-indigo-600 border-solid rounded cursor-pointer md:w-auto lg:mt-0 hover:bg-indigo-700 hover:border-indigo-700 hover:text-white focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-lg lg:ml-6 md:text-xl" 
+                   data-primary="indigo-600" 
+                   data-rounded="rounded">
+                    Placement Study Guide
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
             </div>
-            <div class="px-5 py-2">
-                <a href="#projects" class="text-base leading-6 text-gray-500 hover:text-gray-900">Projects</a>
-            </div>
-            <div class="px-5 py-2">
-                <a href="https://forms.gle/SrdYz8tTArwvS8PKA" class="text-base leading-6 text-gray-500 hover:text-gray-900">Join Us</a>
-            </div>
-            
-            
-        </nav>
-        <div class="flex justify-center mt-8 space-x-6">
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">Facebook</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                    
-                </svg>
-            </a>
-            <a href="https://www.instagram.com/fossvjcet/" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">Instagram</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" class=""></path>
-                </svg>
-            </a>
-            <a href="https://twitter.com/fossvjcet/" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">Twitter</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" class=""></path>
-                </svg>
-            </a>
-            <a href="https://github.com/fossvjcet/" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">GitHub</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" class=""></path>
-                </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">Dribbble</span>
-                
+        </div>
+    </section>
+
+    <!-- Sponsor Section -->
+    <div class="flex justify-center items-center py-12 bg-gray-100">
+        <div class="w-11/12 max-w-md p-6 bg-white rounded-lg shadow-md text-center">
+            <h2 class="text-2xl font-bold mb-4">Sponsor Us</h2>
+            <p class="text-gray-600 mb-6">We are seeking sponsorship to support the open source club and to conduct more fun events.</p>
+            <a href="https://www.buymeacoffee.com/fossvjcet" class="inline-block">
+                <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=fossvjcet&button_colour=5F7FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me a Coffee" class="mx-auto">
             </a>
         </div>
-        <p class="mt-8 text-base leading-6 text-center text-gray-400">Made with love for Opensource</p>
     </div>
-</section>
 
+    <!-- Enhanced Footer Section -->
+    <footer style="font-family: 'Rubik', sans-serif;" class="bg-white">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+            <!-- Navigation Links in Footer -->
+            <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+                <div class="px-5 py-2">
+                    <a href="#_" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        Home
+                    </a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="events.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">Events</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#projects" class="text-base leading-6 text-gray-500 hover:text-gray-900">Projects</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="https://forms.gle/SrdYz8tTArwvS8PKA" class="text-base leading-6 text-gray-500 hover:text-gray-900">Join Us</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="reactworkshop.html" class="text-base leading-6 text-gray-500 hover:text-gray-900">React Course</a>
+                </div>
+            </nav>
+
+            <!-- Social Media Links -->
+            <div class="flex justify-center mt-8 space-x-6">
+                <a href="https://www.facebook.com/fossvjcet" class="text-gray-400 hover:text-gray-500" aria-label="Facebook">
+                    <!-- Facebook SVG Icon -->
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/fossvjcet/" class="text-gray-400 hover:text-gray-500" aria-label="Instagram">
+                    <!-- Instagram SVG Icon -->
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/fossvjcet/" class="text-gray-400 hover:text-gray-500" aria-label="Twitter">
+                    <!-- Twitter SVG Icon -->
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" class=""></path>
+                    </svg>
+                </a>
+                <a href="https://github.com/fossvjcet/" class="text-gray-400 hover:text-gray-500" aria-label="GitHub">
+                    <!-- GitHub SVG Icon -->
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <!-- Optional: Add more social icons as needed -->
+            </div>
+
+            <!-- Additional Footer Information -->
+            <div class="mt-8 text-center">
+                <h2 class="text-xl font-semibold text-gray-700">FOSS CLUB OF VISWAJYOTHI COLLEGE OF ENGINEERING AND TECHNOLOGY 💻</h2>
+                <p class="mt-4 text-gray-500">
+                    Follow us on:
+                </p>
+                <ul class="mt-2 space-y-4 text-gray-500">
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- Website Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                            <path d="M12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"/>
+                        </svg>
+                        <a href="https://fossvjcet.github.io" class="text-indigo-600 hover:underline">Website</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- YouTube Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M10 15l5-3-5-3v6z"/>
+                            <path d="M21.8 8.001A2.978 2.978 0 0020 6c-1.7 0-3.2.89-4.2 2.001C15.2 9.11 13.7 10 12 10c-1.7 0-3.2-.89-4.2-1.999A2.978 2.978 0 0020 6c0 .001-.2.003-.2.003zM12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+                        </svg>
+                        <a href="https://youtube.com/@fossvjcet" class="text-indigo-600 hover:underline">YouTube Channel</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- Mastodon Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.063 12.162c0 5.522-4.477 10-10 10S2.063 17.684 2.063 12.162c0-4.955 3.58-9.05 8.245-9.865v1.862a4.148 4.148 0 01-3.312 4.05 4.148 4.148 0 01-.943.1c-.23 0-.453-.02-.668-.06a4.149 4.149 0 01-1.565-.694c.484.058.988.092 1.503.092 3.35 0 6.077-2.732 6.077-6.077 0-.091-.002-.182-.006-.272a4.143 4.143 0 011.002-3.165 4.143 4.143 0 013.232-1.688c1.245 0 2.406.473 3.232 1.313a4.151 4.151 0 011.002 3.17c-.004.091-.006.182-.006.274 0 3.344 2.725 6.07 6.07 6.07.513 0 1.017-.034 1.502-.093a4.15 4.15 0 01-1.57 3.178 4.15 4.15 0 01-3.224 1.688c-1.245 0-2.406-.473-3.232-1.312a4.15 4.15 0 01-1.002-3.17c.004-.091.006-.182.006-.273 0-3.344-2.725-6.07-6.07-6.07z"/>
+                        </svg>
+                        <a href="https://mastodon.social/@fossclubvjcet" class="text-indigo-600 hover:underline">Mastodon</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- Instagram Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5A4.25 4.25 0 0020.5 16.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zm5.25-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+                        </svg>
+                        <a href="https://www.instagram.com/fossvjcet" class="text-indigo-600 hover:underline">Instagram</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- Twitter Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.31 3.9A12.14 12.14 0 013 4.89a4.28 4.28 0 001.33 5.72A4.27 4.27 0 012 9.15v.05a4.28 4.28 0 003.44 4.19 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54a12.13 12.13 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.7 8.7 0 0024 5.56a8.5 8.5 0 01-2.54.7z"/>
+                        </svg>
+                        <a href="https://twitter.com/fossvjcet" class="text-indigo-600 hover:underline">Twitter</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- LinkedIn Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5C4.98 5.43 3.43 7 1.5 7S-1.98 5.43-1.98 3.5C-1.98 1.57.57-.98 2.5-.98s4.48 2.56 4.48 4.52zM.5 8h4v12h-4V8zm7.98 0h3.64v1.73h.05c.51-.96 1.75-1.98 3.6-1.98 3.85 0 4.56 2.54 4.56 5.85V20h-4v-5.65c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.96V20h-4V8z"/>
+                        </svg>
+                        <a href="https://www.linkedin.com/company/fossvjcet" class="text-indigo-600 hover:underline">LinkedIn</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- GitHub Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                        <a href="https://github.com/fossvjcet" class="text-indigo-600 hover:underline">GitHub</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- Email Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 13.065l-11.99-7.065A1 1 0 002 6h20a1 1 0 00.99-.865L12 13.065z"/>
+                            <path d="M12 15L24 8v8a1 1 0 01-1 1H1a1 1 0 01-1-1v-8l12 7.065z"/>
+                        </svg>
+                        <a href="mailto:fossclubvjcet@gmail.com" class="text-indigo-600 hover:underline">Email</a>
+                    </li>
+                    <li class="flex items-center justify-center space-x-2">
+                        <!-- Buy Me a Coffee Icon -->
+                        <svg class="w-5 h-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18 8h-1V6a6 6 0 10-12 0v2H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2zM8 6a4 4 0 118 0v2H8V6zM6 10v8h12v-8H6z"/>
+                        </svg>
+                        <a href="https://www.buymeacoffee.com/fossvjcet" class="text-indigo-600 hover:underline">Buy Me a Coffee</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Footer Bottom -->
+            <p class="mt-8 text-base leading-6 text-center text-gray-400">Made with love for Open Source</p>
+        </div>
+    </footer>
+
+    <!-- Alpine.js Script -->
     <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 </html>
